@@ -14,19 +14,16 @@
       "name": "豆瓣资源"
     },
     "shandian": {
-      "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
-      "name": "闪电资源",
-      "detail": "https://xsd.sdzyapi.com"
+      "api": "http://xsd.sdzyapi.com/api.php/provide/vod",
+      "name": "闪电资源"
     },
     "okzy": {
-      "api": "https://api.okzyw.net/api.php/provide/vod",
-      "name": "OK资源",
-      "detail": "https://api.okzyw.net"
+      "api": "http://api.okzyw.net/api.php/provide/vod",
+      "name": "OK资源"
     },
     "hongniu": {
-      "api": "https://www.hongniuzy3.com/api.php/provide/vod",
-      "name": "红牛资源",
-      "detail": "https://www.hongniuzy3.com"
+      "api": "http://www.hongniuzy3.com/api.php/provide/vod",
+      "name": "红牛资源"
     },
     "uku": {
       "api": "https://api.ukuapi88.com/api.php/provide/vod",
@@ -101,9 +98,9 @@
       "name": "旺旺短剧"
     },
     "sony": {
-      "api": "https://suoniapi.com/api.php/provide/vod",
+      "api": "http://suoniapi.com/api.php/provide/vod",
       "name": "索尼资源",
-      "detail": "https://suoniapi.com"
+      "detail": "https://suonizy.net"
     }
   }
 }

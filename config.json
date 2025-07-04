@@ -15,23 +15,22 @@
     },
     "shandian": {
       "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
-      "name": "闪电资源"
+      "name": "闪电资源",
+      "detail": "https://xsd.sdzyapi.com"
     },
     "okzy": {
       "api": "https://api.okzyw.net/api.php/provide/vod",
-      "name": "OK资源"
+      "name": "OK资源",
+      "detail": "https://api.okzyw.net"
     },
     "hongniu": {
-      "api": "https://www.hongniuzy2.com/api.php/provide/vod",
-      "name": "红牛资源"
+      "api": "https://www.hongniuzy3.com/api.php/provide/vod",
+      "name": "红牛资源",
+      "detail": "https://www.hongniuzy3.com"
     },
     "uku": {
       "api": "https://api.ukuapi88.com/api.php/provide/vod",
       "name": "U酷资源"
-    },
-    "jinying": {
-      "api": "https://jyzyapi.com/provide/vod",
-      "name": "金鹰资源"
     },
     "dyttzy": {
       "api": "http://caiji.dyttzyapi.com/api.php/provide/vod",

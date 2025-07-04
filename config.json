@@ -76,6 +76,22 @@
     "ikun": {
       "api": "https://ikunzyapi.com/api.php/provide/vod",
       "name": "iKun资源"
+    },
+    "maotai": {
+        "api": "https://caiji.maotaizy.cc/api.php/provide/vod",
+        "name": "茅台资源"
+    },
+    "dbzy5": {
+      "api": "https://caiji.dbzy5.com/api.php/provide/vod",
+      "name": "豆瓣资源"
+    },
+    "sony": {
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "name": "索尼资源"
+    },
+    "okzy": {
+      "api": "https://api.okzyw.net/api.php/provide/vod",
+      "name": "OK资源"
     }
   }
 }

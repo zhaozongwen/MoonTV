@@ -14,15 +14,15 @@
       "name": "豆瓣资源"
     },
     "shandian": {
-      "api": "http://xsd.sdzyapi.com/api.php/provide/vod",
+      "api": "https://xsd.sdzyapi.com/api.php/provide/vod",
       "name": "闪电资源"
     },
     "okzy": {
-      "api": "http://api.okzyw.net/api.php/provide/vod",
+      "api": "https://api.okzyw.net/api.php/provide/vod",
       "name": "OK资源"
     },
     "hongniu": {
-      "api": "http://www.hongniuzy3.com/api.php/provide/vod",
+      "api": "https://www.hongniuzy3.com/api.php/provide/vod",
       "name": "红牛资源"
     },
     "uku": {
@@ -98,9 +98,8 @@
       "name": "旺旺短剧"
     },
     "sony": {
-      "api": "http://suoniapi.com/api.php/provide/vod",
-      "name": "索尼资源",
-      "detail": "https://suonizy.net"
+      "api": "https://suoniapi.com/api.php/provide/vod",
+      "name": "索尼资源"
     }
   }
 }

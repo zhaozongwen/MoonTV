@@ -171,7 +171,7 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
     menuItems.push({
       icon: Github,
       label: 'ikunTV',
-      href: 'https://github.com/senshinya/ikunTV',
+      href: 'https://github.com/zhaozongwen/MoonTV',
     });
   }
 

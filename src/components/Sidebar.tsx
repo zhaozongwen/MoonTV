@@ -167,11 +167,11 @@ const Sidebar = ({ onToggle, activePath = '/' }: SidebarProps) => {
   ];
 
   const { siteName } = useSite();
-  if (siteName !== 'MoonTV') {
+  if (siteName !== 'ikunTV') {
     menuItems.push({
       icon: Github,
-      label: 'MoonTV',
-      href: 'https://github.com/senshinya/MoonTV',
+      label: 'ikunTV',
+      href: 'https://github.com/senshinya/ikunTV',
     });
   }
 

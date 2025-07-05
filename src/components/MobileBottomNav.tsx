@@ -65,11 +65,11 @@ const MobileBottomNav = ({ activePath }: MobileBottomNavProps) => {
   ];
 
   const { siteName } = useSite();
-  if (siteName !== 'MoonTV') {
+  if (siteName !== 'ikunTV') {
     navItems.push({
       icon: Github,
-      label: 'MoonTV',
-      href: 'https://github.com/senshinya/MoonTV',
+      label: 'ikunTV',
+      href: 'https://github.com/zhaozongwen/MoonTV',
     });
   }
 

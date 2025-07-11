@@ -108,14 +108,17 @@ const EpisodeSelector: React.FC<EpisodeSelectorProps> = ({
     }
 
     // 获取第一集的URL
-    const firstEpisodeUrl = source.episodes?.[0];
-    if (!firstEpisodeUrl) return;
+    if (!source.episodes || source.episodes.length === 0) {
+      return;
+    }
+    const episodeUrl =
+      source.episodes.length > 1 ? source.episodes[1] : source.episodes[0];
 
     // 标记为已尝试
     setAttemptedSources((prev) => new Set(prev).add(sourceKey));
 
     try {
-      const info = await getVideoResolutionFromM3u8(firstEpisodeUrl);
+      const info = await getVideoResolutionFromM3u8(episodeUrl);
       setVideoInfoMap((prev) => new Map(prev).set(sourceKey, info));
     } catch (error) {
       // 失败时保存错误状态
@@ -522,25 +525,26 @@ const EpisodeSelector: React.FC<EpisodeSelectorProps> = ({
                             {(() => {
                               const sourceKey = `${source.source}-${source.id}`;
                               const videoInfo = videoInfoMap.get(sourceKey);
-
-                              if (videoInfo && !videoInfo.hasError) {
-                                return (
-                                  <div className='flex items-end gap-3 text-xs'>
-                                    <div className='text-green-600 dark:text-green-400 font-medium text-xs'>
-                                      {videoInfo.loadSpeed}
+                              if (videoInfo) {
+                                if (!videoInfo.hasError) {
+                                  return (
+                                    <div className='flex items-end gap-3 text-xs'>
+                                      <div className='text-green-600 dark:text-green-400 font-medium text-xs'>
+                                        {videoInfo.loadSpeed}
+                                      </div>
+                                      <div className='text-orange-600 dark:text-orange-400 font-medium text-xs'>
+                                        {videoInfo.pingTime}ms
+                                      </div>
                                     </div>
-                                    <div className='text-orange-600 dark:text-orange-400 font-medium text-xs'>
-                                      {videoInfo.pingTime}ms
+                                  );
+                                } else {
+                                  return (
+                                    <div className='text-red-500/90 dark:text-red-400 font-medium text-xs'>
+                                      无测速数据
                                     </div>
-                                  </div>
-                                );
+                                  ); // 占位div
+                                }
                               }
-
-                              return (
-                                <div className='text-red-500/90 dark:text-red-400 font-medium text-xs'>
-                                  无测速数据
-                                </div>
-                              ); // 占位div
                             })()}
                           </div>
                         </div>
